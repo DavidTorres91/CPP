@@ -272,7 +272,7 @@ void menu_residuo(){
 	bool repite= true;
 	int opcion;
 	int num1,num2;
-	float num01,num02;
+
 	
 	const char *titulo="MENU RESIDUO";
 	const char *opciones[] ={"Residuo enteros","Residuo flotantes","Salir"};
@@ -300,14 +300,14 @@ void menu_residuo(){
 				break;
 				case 2:
 				cout << "Ingrese primer numero: ";
-				cin>>num01;
+				cin>>num1;
 				cout << "Ingrese segundo numero: ";
-				cin>>num02;
+				cin>>num2;
 				if(num2==0){
 					cout<<"\nNo se puede el residuo de cero."<<endl;
 				}
 				else{
-					cout<<"\n"<<num01<<" % "<<num02<<" = "<< num1%num2<<endl;
+					cout<<"\n"<<num1<<" % "<<num2<<" = "<< num1%num2<<endl;
 				}				
 				system("pause>nul");
 					break;
